@@ -25,6 +25,8 @@ package com.mycompany.labuok;
      System.out.println("Hourly Rate: " +hourlyRate);
     }
     
+    //Comment: Because it is protected. Protected variables can be accessed in child classes.
+
 
 }
 
