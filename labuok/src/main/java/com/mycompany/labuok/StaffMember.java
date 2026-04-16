@@ -7,12 +7,14 @@ public abstract class StaffMember {
     private String fullname;
     private final String staffId;
     protected String department;
+    private static int staffCount = 0;
     
     //craete a public constructor
     public StaffMember(String fullname,String staffId,String department){
      this.fullname=fullname;
      this.staffId=staffId;
      this.department=department;
+     staffCount++;
     }
     
     //create getter methods
@@ -24,6 +26,14 @@ public abstract class StaffMember {
     }
     public String getDepartment(){
      return department;
+    }
+    
+    public static void showSystemName(){
+      System.out.println("University Staff Payment System");
+    }
+    
+    public static int getStaffCount(){
+     return staffCount;
     }
     
     //create final method
