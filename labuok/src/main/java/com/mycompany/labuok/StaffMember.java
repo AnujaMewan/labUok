@@ -36,6 +36,16 @@ public abstract class StaffMember {
      return staffCount;
     }
     
+    public void changeDepartment(String newDepartment){
+      if(newDepartment != null && !newDepartment.isEmpty()){
+       this.department = newDepartment;
+      }
+    }
+    
+    public final void showCommonNotice(){
+      System.out.println("Staff Members must follow university policies.");
+    }
+    
     //create final method
     public final void displayBasicDetails(){
      System.out.println("\nName: " +fullname+ "\nStaffID: " +staffId+ "\nDepartment: " +department);
