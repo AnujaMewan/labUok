@@ -28,7 +28,7 @@ public abstract class StaffMember {
     
     //create final method
     public final void displayBasicDetails(){
-     System.out.println("Name: " +fullname+ "\n StaffID: " +staffId+ "\n Department" +department);
+     System.out.println("Name: " +fullname+ "\nStaffID: " +staffId+ "\nDepartment: " +department);
     }
     
     //create abstract method
