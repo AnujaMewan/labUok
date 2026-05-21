@@ -119,6 +119,8 @@ public class StudentGradeForm extends javax.swing.JFrame {
 
     private void nameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTextFieldActionPerformed
         // TODO add your handling code here:
+        String name = nameTextField.getText(); 
+        int mark = Integer.parseInt(markTextField.getText()); 
     }//GEN-LAST:event_nameTextFieldActionPerformed
 
     private void calculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtonActionPerformed
