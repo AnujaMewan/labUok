@@ -14,3 +14,5 @@ public class StudentAverageTest {
         System.out.println("Program continues...");
     }
 }
+
+//integer division by zero is mathematically undefined
