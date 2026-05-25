@@ -1,4 +1,4 @@
-package AverageCal;
+package PartA;
 
 public class StudentAverageCalculator {
     private int totalMarks;
