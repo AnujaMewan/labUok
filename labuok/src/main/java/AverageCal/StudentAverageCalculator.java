@@ -12,3 +12,4 @@ public class StudentAverageCalculator {
     public int calculateAverage() {
        return totalMarks / numberOfStudents;
     }
+}
