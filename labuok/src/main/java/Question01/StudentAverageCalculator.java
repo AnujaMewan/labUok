@@ -1,4 +1,4 @@
-package PartA;
+package Question01;
 
 public class StudentAverageCalculator {
     private int totalMarks;

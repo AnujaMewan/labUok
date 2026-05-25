@@ -1,4 +1,4 @@
-package PartA;
+package Question01;
 
 public class StudentAverageTest {
     public static void main(String[] args) {
