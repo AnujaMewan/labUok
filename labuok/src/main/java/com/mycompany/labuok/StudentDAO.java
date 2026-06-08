@@ -27,7 +27,30 @@ public class StudentDAO {
         } catch (SQLException e) {
             System.out.println("Database Error: " + e.getMessage());
         }
+    }  
+    public void displayAllStudents() {
+
+    String sql = "SELECT student_id, student_name, mark FROM students";
+
+    try (Connection conn =
+                 StudentDatabaseConnection.getConnection();
+         PreparedStatement stmt =
+                 conn.prepareStatement(sql);
+         java.sql.ResultSet rs = stmt.executeQuery()) {
+
+        while (rs.next()) {
+
+            System.out.println(
+                    "ID: " + rs.getInt("student_id")
+                    + ", Name: " + rs.getString("student_name")
+                    + ", Mark: " + rs.getInt("mark"));
+        }
+
+    } catch (SQLException e) {
+        System.out.println("Database Error: " + e.getMessage());
+    }
+}
+        
     }
 
     
-}
