@@ -1,4 +1,4 @@
-package Question1L8;
+package com.mycompany.labuok;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
